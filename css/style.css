@@ -1,6 +1,56 @@
+/* tags gerais */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container-limite {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* cabecalho */
+header {
+    margin: 20px auto;
+}
+
+/* adicionando limite ao cabecalho */
+.container-limite-cabecalho {
+    margin: auto;
+    max-width: 1480px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* links do cabecalho */
+.container-limite-cabecalho .cabecalho-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.container-limite-cabecalho .cabecalho-links a {
+    color: #0D1730;
+    font-weight: bolder;
+}
+
+/* minha apresentacao */
+.section-sobre {
+    height: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.container-apresentacao {
+    padding: 50px;
+}
+
+.container-apresentacao #apresentacao {
+    line-height: 50px;
+}
+
+.container-apresentacao #Ola {
+    font-size: 20px;
+    color: #0E65D1;
 }
