@@ -3,8 +3,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Lato" , "Sans-serif";
     text-decoration: none;
+
+}
+body {
+    background-color: #120E26;
 }
 .container-limite {
     max-width: 1280px;
@@ -12,7 +16,7 @@
 }
 /* cabecalho */
 header {
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 /* adicionando limite ao cabecalho */
@@ -21,6 +25,7 @@ header {
     max-width: 1480px;
     display: flex;
     justify-content: space-around;
+    
 }
 
 /* links do cabecalho */
@@ -31,26 +36,73 @@ header {
 }
 
 .container-limite-cabecalho .cabecalho-links a {
-    color: #0D1730;
+    color: #FFFFFF;
     font-weight: bolder;
+    font-family: "Space Mono", serif;
 }
 
 /* minha apresentacao */
 .section-sobre {
-    height: 50vw;
+    height: 40vw;
     display: flex;
     align-items: center;
 }
 
 .container-apresentacao {
-    padding: 50px;
+    padding: 100px;
 }
 
 .container-apresentacao #apresentacao {
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .container-apresentacao #Ola {
-    font-size: 20px;
-    color: #0E65D1;
+    font-size: 18px;
+    color: #0993C5;
+}
+
+.container-apresentacao h1 {
+    color: #FFFFFF;
+    font-size: 4em;
+    margin: 35px 0px
+}
+
+.container-apresentacao h2 {
+    color: #0693E3;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.container-apresentacao #textinho {
+    color: #A3A8C3;
+    font-size: 12px;
+    
+}
+
+.container-apresentacao #textinho p{
+    font-family: "Space Mono", serif;
+}
+/* os links da apresentação */
+.links-bio {
+    display: flex;
+    gap: 20px;
+}
+
+.link-bio-github {
+    padding: 10px 20px;
+    border: 1px solid #0693E3;
+    border-radius: 6px;
+}
+
+.link-bio-github a,
+.link-bio-linkedin a{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: "Space Mono", serif;
+}
+
+.link-bio-linkedin {
+    background-color: #0693E3;
+    border-radius: 6px;
+    padding: 10px 20px;
 }
