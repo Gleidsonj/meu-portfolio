@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Lato" , "Sans-serif";
     text-decoration: none;
+    color: #FFFFFF;
 
 }
 body {
@@ -13,25 +14,45 @@ body {
 .container-limite {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0px 100px;
 }
 /* cabecalho */
 header {
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 /* adicionando limite ao cabecalho */
 .container-limite-cabecalho {
     margin: auto;
-    max-width: 1480px;
     display: flex;
-    justify-content: space-around;
-    
+    max-width: 1400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+
+/* logo */
+.cabecalho-logo {
+    width: 55px;
+    height: 55px;
+    background-color: #0693E3;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cabecalho-logo p {
+    font-size: 50px;
+    font-weight: bolder;
+    color:#120E26
 }
 
 /* links do cabecalho */
 .container-limite-cabecalho .cabecalho-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -43,13 +64,13 @@ header {
 
 /* minha apresentacao */
 .section-sobre {
-    height: 40vw;
     display: flex;
+    height: 85vh;
     align-items: center;
 }
 
 .container-apresentacao {
-    padding: 100px;
+    padding: 0px 100px 100px 100px;
 }
 
 .container-apresentacao #apresentacao {
@@ -81,14 +102,17 @@ header {
 
 .container-apresentacao #textinho p{
     font-family: "Space Mono", serif;
+    color:#A3A8C3;
 }
+
 /* os links da apresentação */
 .links-bio {
     display: flex;
     gap: 20px;
+    margin-top: 10px
 }
 
-.link-bio-github {
+.link-bio-github a{
     padding: 10px 20px;
     border: 1px solid #0693E3;
     border-radius: 6px;
@@ -101,8 +125,54 @@ header {
     font-family: "Space Mono", serif;
 }
 
-.link-bio-linkedin {
+.link-bio-linkedin a{
     background-color: #0693E3;
     border-radius: 6px;
     padding: 10px 20px;
 }
+
+
+/* sobre mim - biografia*/
+
+/* linha abaixo do "sobre mim" */
+.sobre-mim-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #0993C5;
+    margin-bottom: 20px;
+}
+
+.fa-solid, .sobre-mim div h3, .section-projetos h3 {
+    padding-bottom: 10px;
+    margin-top: 30px
+}
+
+/* text do sobre mim */
+.text-bio {
+    line-height: 22px;
+    font-size: 17px;
+}
+ .text-bio span {
+    color:#0693E3;
+    font-weight: 600;
+}
+
+/* secao de habilidade */
+.secao-habilidades {
+    margin-top: 20px;
+}
+
+.habilidades-cards {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidades-cards svg {
+    width: 30px
+}
+
+/* seção dos projetos */
