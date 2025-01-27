@@ -70,7 +70,7 @@ header {
 }
 
 .container-apresentacao {
-    padding: 0px 100px 100px 100px;
+    padding: 0px 100px 100px 0px;
 }
 
 .container-apresentacao #apresentacao {
@@ -176,3 +176,72 @@ header {
 }
 
 /* seção dos projetos */
+.section-projetos {
+    margin-top: 40px;
+}
+
+.secao-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-projeto {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-projeto .img-card-projeto img {
+    width: 550px;
+}
+
+.text-card-projeto {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-card-projeto h2 {
+    color:#0993C5
+}
+
+.text-card-projeto p {
+    line-height: 25px;
+    font-size: 17px;
+}
+
+/* links dos cards do projeto */
+.card-projeto .links-projeto {
+    display: flex;
+    gap: 30px;
+}
+
+.card-projeto .links-projeto div a {
+    padding: 15px 20px;
+    border: 1px solid #0693E3;
+    border-radius: 10px;
+}
+
+.card-projeto .links-projeto div i {
+    padding-left: 10px;
+}
+
+/* rodapé */
+footer {
+    margin: 30px 0px 0px;
+    text-align: center;
+    background-color:#0993C5;
+    padding: 20px 0px
+}
+
+footer span {
+    font-weight: 800;
+    font-style: italic;
+}
