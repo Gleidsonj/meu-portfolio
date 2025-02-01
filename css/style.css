@@ -349,6 +349,70 @@ footer p {
     width: 30px;
 }
 
+/* APLICANDO RESPONSIVIDADE até - 480px  */
+
+@media screen and (max-width: 480px) {
+    /* container-limite */
+    .section-sobre {
+        height: 77vh;
+    }
+
+    .container-limite {
+        padding: 0px 5px;
+    }
+
+    /* cabecalho do site */
+    .container-limite-cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cabecalho-logo {
+        padding: 10px;
+    }
+
+    /* onde me apresento */
+    .container-apresentacao h1 {
+        font-size: 50px;
+    }
+
+    .container-apresentacao {
+        padding: 0px;
+    }
+
+    /* links onde me apresento github e linkedin*/
+    .links-bio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* cards dos projeto */
+
+    .secao-projetos {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-projeto .img-card-projeto img {
+        width: 320px;
+    }
+
+    .links-projeto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer a{
+        display: none;
+    }
+}
+
 
 /* APLICANDO RESPONSIVIDADE até - 560px  */
 @media screen and (max-width: 580px) {
