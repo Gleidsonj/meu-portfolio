@@ -213,7 +213,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #F7F5F2;
-    padding: 22px;
+    padding: 2px;
     border-radius: 15px;
 }
 
@@ -411,9 +411,9 @@ footer p {
 
     .links-projeto {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px;
+        justify-content: center;
     }
 
     footer a{
