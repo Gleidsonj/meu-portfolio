@@ -398,7 +398,8 @@ footer p {
     /* cards dos projeto */
 
     .card-projeto {
-        padding: 0px;
+        padding: 10px;
+        width: 100px;
     }
 
     .secao-projetos {
@@ -407,7 +408,7 @@ footer p {
     }
 
     .card-projeto .img-card-projeto img {
-        width: 60vw;
+        width: 80px;
     }
 
     .links-projeto {
