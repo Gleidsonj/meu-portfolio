@@ -1,15 +1,17 @@
-/* tags gerais */
+/* tags globais */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Lato" , "Sans-serif";
     text-decoration: none;
-    color: #FFFFFF;
+    color: #1C1311;
 
 }
+
+/* cor do corpo */
 body {
-    background-color: #120E26;
+    background-color: #FFFCF8;
 }
 .container-limite {
     max-width: 1280px;
@@ -18,7 +20,7 @@ body {
 }
 /* cabecalho */
 header {
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 /* adicionando limite ao cabecalho */
@@ -29,37 +31,47 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0px 30px;
+    align-items: center;
+    flex-grow: 2;
 }
 
 /* logo */
 .cabecalho-logo {
-    width: 55px;
-    height: 55px;
-    background-color: #0693E3;
-    border-radius: 5px;
+    padding: 15px 40px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 3px 5px #DFDEDD;
 
 }
 
 .cabecalho-logo p {
     font-size: 50px;
     font-weight: bolder;
-    color:#120E26
+    color:#0693E3;
 }
 
 /* links do cabecalho */
 .container-limite-cabecalho .cabecalho-links {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .container-limite-cabecalho .cabecalho-links a {
-    color: #FFFFFF;
-    font-weight: bolder;
+    color: #1C1311;
     font-family: "Space Mono", serif;
+    transition: 1.5s;
+}
+
+.container-limite-cabecalho .cabecalho-links div {
+    transition: 1.1s;
+}
+
+.container-limite-cabecalho .cabecalho-links div:hover {
+    transform: scale(1.1);
 }
 
 /* minha apresentacao */
@@ -70,7 +82,7 @@ header {
 }
 
 .container-apresentacao {
-    padding: 0px 100px 100px 0px;
+    padding: 0px 50px 50px 0px;
 }
 
 .container-apresentacao #apresentacao {
@@ -79,30 +91,32 @@ header {
 
 .container-apresentacao #Ola {
     font-size: 18px;
-    color: #0993C5;
-}
-
-.container-apresentacao h1 {
-    color: #FFFFFF;
-    font-size: 4em;
-    margin: 35px 0px
+    color: #1C1311;
 }
 
 .container-apresentacao h2 {
-    color: #0693E3;
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    color:#1C1311;
+    font-size: 4em;
+    margin: 35px 0px;
+    font-weight: 400;
 }
 
-.container-apresentacao #textinho {
-    color: #A3A8C3;
-    font-size: 12px;
-    
+.container-apresentacao h1 {
+    color: rgba(102, 80, 43, 0.855);
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-size: 5em;
+    line-height: 60px;;
+}
+
+.container-apresentacao h1 span {
+    color: #060A2F
 }
 
 .container-apresentacao #textinho p{
     font-family: "Space Mono", serif;
-    color:#A3A8C3;
+    color:#1C1311;
+    margin: 0px 0px 25px
 }
 
 /* os links da apresentação */
@@ -112,25 +126,26 @@ header {
     margin-top: 10px
 }
 
-.link-bio-github a{
-    padding: 10px 20px;
-    border: 1px solid #0693E3;
-    border-radius: 6px;
-}
-
 .link-bio-github a,
 .link-bio-linkedin a{
-    color: #FFFFFF;
+    color:#060A2F;
     font-weight: 600;
     font-family: "Space Mono", serif;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px #cecece;
+    font-size: 18px;
 }
 
-.link-bio-linkedin a{
-    background-color: #0693E3;
-    border-radius: 6px;
-    padding: 10px 20px;
+.link-bio-github,
+.link-bio-linkedin {
+    transition: 0.5s;
 }
 
+.link-bio-github:hover,
+.link-bio-linkedin:hover {
+    transform: scale(1.1);
+}
 
 /* sobre mim - biografia*/
 
@@ -140,7 +155,7 @@ header {
     align-items: center;
     gap: 10px;
     padding-bottom: 2px;
-    border-bottom: 1px solid #0993C5;
+    border-bottom: 1px solid #DFDEDD;
     margin-bottom: 20px;
 }
 
@@ -152,11 +167,12 @@ header {
 
 /* text do sobre mim */
 .text-bio {
-    line-height: 22px;
+    line-height: 30px;
     font-size: 17px;
+
 }
  .text-bio span {
-    color:#0693E3;
+    color:rgba(102, 80, 43, 0.855);
     font-weight: 600;
 }
 
@@ -170,6 +186,8 @@ header {
     gap: 40px;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .habilidades-cards svg {
@@ -186,6 +204,7 @@ header {
     flex-direction: column;
     gap: 40px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .card-projeto {
@@ -193,6 +212,9 @@ header {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #F7F5F2;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .card-projeto .img-card-projeto img {
@@ -225,9 +247,22 @@ header {
 }
 
 .card-projeto .links-projeto div a {
-    padding: 15px 20px;
-    border: 1px solid #0693E3;
-    border-radius: 10px;
+    color:#060A2F;
+    font-weight: 600;
+    font-family: "Lato", serif;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px #cecece;
+    font-size: 18px;
+}
+
+/* hover dos links do projeto */
+.card-projeto .links-projeto div {
+    transition: 1.3s;
+}
+
+.card-projeto .links-projeto div:hover{
+    transform: scale(1.1);
 }
 
 .card-projeto .links-projeto div i {
@@ -236,7 +271,6 @@ header {
 
 /* section contato */
 .section-contato {
-    margin: 50px auto;
     text-align: center;
     line-height: 25px;
     font-family: "Lato" , "Sans-serif";
@@ -245,12 +279,9 @@ header {
 
 .section-contato h2 {
     margin: 70px 0px 30px;
-    font-size: 40px
+    font-size: 40px;
 }
 
-.section-contato svg {
-    width: 40px;
-}
 
 .section-contato div {
     display: flex;
@@ -265,9 +296,156 @@ footer {
     text-align: center;
     background-color:#0993C5;
     padding: 20px 0px;
+    position: relative;
+    width: 100%;
+    color:#FFFFFF;
 }
 
 footer span {
     font-weight: 800;
+    color: #FFFFFF;
+}
+
+footer p {
+    color:#F7F5F2;
+}
+
+#italico {
     font-style: italic;
+}
+
+/* seta voltar para o inicio */ 
+#seta-voltar i{
+    position: absolute;
+    background-color:#DFDEDD;
+    padding: 20px;
+    border-radius: 15px;
+    right: 50px;
+    bottom: 50px;
+    border: 2px solid #FFFFFF;
+    transition: 1.5s;
+    color:#060A2F;
+}
+
+#seta-voltar i:hover {
+    transform: scale(1.1);
+}
+
+/* Links dos contatos */
+.links-contato {
+    display: flex;
+    align-items: center;
+}
+
+.links-contato div {
+    transition: 1.3s;
+}
+
+.links-contato div:hover {
+    transform: scale(1.5);
+}
+
+.section-contato svg {
+    width: 30px;
+}
+
+
+/* APLICANDO RESPONSIVIDADE até - 560px  */
+@media screen and (max-width: 580px) {
+
+
+    /* container-limite */
+    .section-sobre {
+        height: 77vh;
+    }
+
+    .container-limite {
+        padding: 0px 5px;
+    }
+
+    /* cabecalho do site */
+    .container-limite-cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cabecalho-logo {
+        padding: 20px;
+    }
+
+    /* onde me apresento */
+    .container-apresentacao h1 {
+        font-size: 64px;
+    }
+
+    .container-apresentacao {
+        padding: 0px;
+    }
+
+    /* links onde me apresento github e linkedin*/
+    .links-bio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* cards dos projeto */
+
+    .secao-projetos {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-projeto .img-card-projeto img {
+        width: 350px;
+    }
+
+    .links-projeto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer a{
+        display: none;
+    }
+}
+
+/* APLICANDO RESPONSIVIDADE até - 1024px  */
+@media screen and (max-width: 1024px) {
+
+
+    .foto-apresentacao img {
+        display: none;
+    }
+
+    /* container apresentação */
+    .container-apresentacao {
+        padding: 0px;
+    }
+
+    .container-limite {
+        padding: 0px 20px;
+    }
+
+    /* cards dos projeto */
+
+    .section-projetos {
+        margin: 0 auto;
+    }
+
+    .card-projeto .img-card-projeto img {
+        width: 400px;
+    }
+
+    /* footer */
+    footer a {
+        display: none;
+    }
+    
+    
 }
