@@ -213,7 +213,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #F7F5F2;
-    padding: 30px;
+    padding: 22px;
     border-radius: 15px;
 }
 
@@ -403,9 +403,6 @@ footer p {
 
     .secao-projetos {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
     }
 
     .card-projeto .img-card-projeto img {
