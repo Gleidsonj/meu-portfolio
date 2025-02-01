@@ -378,7 +378,6 @@ footer p {
     /* onde me apresento */
     .container-apresentacao h1 {
         font-size: 50px;
-        color: red;
     }
 
     .container-apresentacao h2 {
@@ -399,7 +398,7 @@ footer p {
     /* cards dos projeto */
 
     .card-projeto {
-        padding: 9px;
+        padding: 0px;
     }
 
     .secao-projetos {
@@ -408,7 +407,7 @@ footer p {
     }
 
     .card-projeto .img-card-projeto img {
-        width: 200px;
+        width: 100px;
     }
 
     .links-projeto {
