@@ -412,8 +412,8 @@ footer p {
     .links-projeto {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 15px 22px;
+        justify-content: space-between;
+        padding: 15px 20px;
     }
 
     footer a{
