@@ -377,11 +377,15 @@ footer p {
 
     /* onde me apresento */
     .container-apresentacao h1 {
-        font-size: 64px;
+        font-size: 50px;
+    }
+
+    .container-apresentacao h2 {
+        font-size: 36px;
     }
 
     .container-apresentacao {
-        padding: 0px;
+        padding: 2px;
     }
 
     /* links onde me apresento github e linkedin*/
